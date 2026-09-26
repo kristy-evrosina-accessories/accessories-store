@@ -1,0 +1,1826 @@
+<!DOCTYPE html><html dir="rtl" lang="ar" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>LUX Accessories | أناقتك تبدأ من التفاصيل</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet">
+<style>
+    /* Reset & CSS Variables */
+    :root {
+      --gold-primary: #D4AF37;
+      --gold-light: #F3E5AB;
+      --gold-hover: #AA820A;
+      --gold-gradient: linear-gradient(135deg, #D4AF37 0%, #AA820A 100%);
+      --dark-bg: #0D0D0E;
+      --dark-surface: #17181A;
+      --dark-card: #202226;
+      --border-color: rgba(212, 175, 55, 0.2);
+      --text-main: #FFFFFF;
+      --text-muted: #A3A3A8;
+      --font-arabic: 'Cairo', sans-serif;
+      --font-serif: 'Playfair Display', serif;
+      --shadow-luxury: 0 12px 30px rgba(0, 0, 0, 0.5);
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-arabic);
+      background-color: var(--dark-bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    button, input, textarea {
+      font-family: inherit;
+      border: none;
+      outline: none;
+    }
+
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3.5rem;
+      position: relative;
+    }
+
+    .section-title span {
+      color: var(--gold-primary);
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title h2 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 3px;
+      background: var(--gold-gradient);
+      margin: 1rem auto 0;
+      border-radius: 2px;
+    }
+
+    /* Header & Navigation */
+    header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      background: rgba(13, 13, 14, 0.92);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+      border-bottom: 1px solid var(--border-color);
+      transition: var(--transition);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.1rem 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .logo-text {
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      background: linear-gradient(135deg, #FFF 30%, var(--gold-primary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.2rem;
+    }
+
+    .nav-links a {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #E2E2E6;
+      transition: var(--transition);
+      position: relative;
+      padding: 5px 0;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--gold-primary);
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold-primary);
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+
+    .cart-btn {
+      position: relative;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid var(--border-color);
+      color: var(--gold-primary);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .cart-btn:hover {
+      background: var(--gold-primary);
+      color: #000;
+      transform: translateY(-2px);
+    }
+
+    .cart-badge {
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      background: #E53935;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--dark-bg);
+    }
+
+    .mobile-menu-toggle {
+      display: none;
+      background: none;
+      color: var(--gold-primary);
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding-top: 5rem;
+      background: radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+                  radial-gradient(circle at 15% 70%, rgba(212, 175, 55, 0.08) 0%, transparent 40%),
+                  var(--dark-bg);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 3.5rem;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--border-color);
+      padding: 6px 16px;
+      border-radius: 30px;
+      color: var(--gold-light);
+      font-size: 0.88rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-title span {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .hero-desc {
+      color: var(--text-muted);
+      font-size: 1.15rem;
+      margin-bottom: 2.2rem;
+      line-height: 1.8;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0.85rem 2.2rem;
+      border-radius: 6px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-gold {
+      background: var(--gold-gradient);
+      color: #0D0D0E;
+      box-shadow: 0 4px 18px rgba(212, 175, 55, 0.35);
+    }
+
+    .btn-gold:hover {
+      box-shadow: 0 6px 25px rgba(212, 175, 55, 0.55);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: #fff;
+      margin-right: 1rem;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: var(--gold-primary);
+      color: var(--gold-primary);
+    }
+
+    .hero-img-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-img-card {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-luxury);
+      width: 100%;
+      max-width: 480px;
+    }
+
+    .hero-img-card img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .hero-img-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .floating-box {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      background: rgba(32, 34, 38, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border-color);
+      padding: 1.2rem 1.6rem;
+      border-radius: 14px;
+      box-shadow: var(--shadow-luxury);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .floating-icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: rgba(212, 175, 55, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-primary);
+      font-size: 1.3rem;
+    }
+
+    /* Products Section */
+    .products-section {
+      padding: 7rem 0 5rem;
+      background: var(--dark-surface);
+      position: relative;
+    }
+
+    .category-filter {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+
+    .filter-btn {
+      padding: 0.55rem 1.4rem;
+      border-radius: 25px;
+      background: var(--dark-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--gold-primary);
+      color: #000;
+      border-color: var(--gold-primary);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background: var(--dark-card);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--border-color);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.15);
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: var(--gold-primary);
+      color: #000;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 4px;
+      z-index: 2;
+    }
+
+    .product-img-box {
+      width: 100%;
+      height: 240px;
+      overflow: hidden;
+      position: relative;
+      background: #111;
+    }
+
+    .product-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .product-card:hover .product-img-box img {
+      transform: scale(1.08);
+    }
+
+    .product-info {
+      padding: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-cat {
+      font-size: 0.8rem;
+      color: var(--gold-primary);
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .product-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      color: #fff;
+    }
+
+    .product-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 1.2rem;
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+
+    .product-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 1rem;
+    }
+
+    .product-price {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--gold-light);
+    }
+
+    .product-price span {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+
+    .add-to-cart-btn {
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid var(--border-color);
+      color: var(--gold-primary);
+      padding: 0.55rem 1.1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+    }
+
+    .add-to-cart-btn:hover {
+      background: var(--gold-primary);
+      color: #000;
+      transform: scale(1.03);
+    }
+
+    /* About Section */
+    .about-section {
+      padding: 7rem 0;
+      background: var(--dark-bg);
+      position: relative;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 4rem;
+    }
+
+    .about-images {
+      position: relative;
+    }
+
+    .about-img-main {
+      width: 85%;
+      border-radius: 16px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-luxury);
+      height: 420px;
+      object-fit: cover;
+    }
+
+    .about-img-sub {
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      width: 55%;
+      height: 240px;
+      border-radius: 12px;
+      border: 2px solid var(--gold-primary);
+      box-shadow: var(--shadow-luxury);
+      object-fit: cover;
+    }
+
+    .about-content h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1.4rem;
+      line-height: 1.4;
+    }
+
+    .about-content h3 span {
+      color: var(--gold-primary);
+    }
+
+    .about-content p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .about-feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .feature-icon {
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold-primary);
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .feature-text h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+
+    .feature-text p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      padding: 7rem 0;
+      background: var(--dark-surface);
+      position: relative;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 4rem;
+    }
+
+    .contact-info-card {
+      background: var(--dark-card);
+      border-radius: 16px;
+      padding: 2.5rem;
+      border: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .contact-info-card h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .contact-info-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .contact-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-primary);
+      font-size: 1.2rem;
+    }
+
+    .contact-detail h5 {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .contact-detail p {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .contact-form-card {
+      background: var(--dark-card);
+      border-radius: 16px;
+      padding: 2.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .form-group {
+      margin-bottom: 1.4rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #E2E2E6;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.85rem 1.2rem;
+      background: rgba(13, 13, 14, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+      color: #fff;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      border-color: var(--gold-primary);
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-alert {
+      padding: 0.8rem;
+      border-radius: 8px;
+      margin-bottom: 1.2rem;
+      display: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .form-alert.success {
+      background: rgba(76, 175, 80, 0.15);
+      border: 1px solid #4CAF50;
+      color: #81C784;
+    }
+
+    /* Shopping Cart Sidebar Modal */
+    .cart-drawer-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(5px);
+      z-index: 2000;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+
+    .cart-drawer-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      left: -420px;
+      width: 100%;
+      max-width: 400px;
+      height: 100%;
+      background: var(--dark-card);
+      z-index: 2001;
+      box-shadow: 10px 0 30px rgba(0, 0, 0, 0.7);
+      transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid var(--border-color);
+    }
+
+    .cart-drawer.active {
+      left: 0;
+    }
+
+    .cart-header {
+      padding: 1.4rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cart-header h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .close-cart {
+      background: none;
+      color: var(--text-muted);
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: var(--transition);
+      line-height: 1;
+    }
+
+    .close-cart:hover {
+      color: #fff;
+    }
+
+    .cart-body {
+      padding: 1.4rem;
+      overflow-y: auto;
+      flex-grow: 1;
+    }
+
+    .cart-empty-message {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text-muted);
+    }
+
+    .cart-empty-message svg {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 1rem;
+      stroke: var(--gold-primary);
+      opacity: 0.5;
+    }
+
+    .cart-item {
+      display: flex;
+      gap: 12px;
+      padding-bottom: 1.2rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      position: relative;
+    }
+
+    .cart-item-img {
+      width: 70px;
+      height: 70px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .cart-item-details {
+      flex-grow: 1;
+    }
+
+    .cart-item-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .cart-item-price {
+      color: var(--gold-primary);
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .cart-item-qty {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .qty-btn {
+      width: 24px;
+      height: 24px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .qty-btn:hover {
+      background: var(--gold-primary);
+      color: #000;
+    }
+
+    .cart-item-remove {
+      background: none;
+      color: #FF5252;
+      cursor: pointer;
+      font-size: 1.1rem;
+      align-self: flex-start;
+      padding: 4px;
+      transition: var(--transition);
+    }
+
+    .cart-item-remove:hover {
+      color: #FF1744;
+      transform: scale(1.15);
+    }
+
+    .cart-footer {
+      padding: 1.4rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(13, 13, 14, 0.5);
+    }
+
+    .cart-total-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.2rem;
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .cart-total-price {
+      color: var(--gold-light);
+      font-size: 1.35rem;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: var(--dark-card);
+      border: 1px solid var(--gold-primary);
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 8px;
+      box-shadow: var(--shadow-luxury);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      z-index: 3000;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Footer */
+    footer {
+      background: #09090A;
+      border-top: 1px solid rgba(212, 175, 55, 0.15);
+      padding: 4rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand p {
+      color: var(--text-muted);
+      margin: 1.2rem 0;
+      font-size: 0.95rem;
+      max-width: 320px;
+    }
+
+    .footer-links h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1.2rem;
+      position: relative;
+    }
+
+    .footer-links h4::after {
+      content: '';
+      display: block;
+      width: 25px;
+      height: 2px;
+      background: var(--gold-primary);
+      margin-top: 6px;
+    }
+
+    .footer-links ul li {
+      margin-bottom: 0.7rem;
+    }
+
+    .footer-links ul li a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .footer-links ul li a:hover {
+      color: var(--gold-primary);
+      padding-right: 5px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 1.8rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .hero-title {
+        font-size: 2.8rem;
+      }
+      .about-images {
+        margin-bottom: 2rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: var(--dark-card);
+        flex-direction: column;
+        padding: 1.5rem;
+        border-bottom: 1px solid var(--border-color);
+        gap: 1.2rem;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .mobile-menu-toggle {
+        display: block;
+      }
+      .hero-title {
+        font-size: 2.2rem;
+      }
+      .floating-box {
+        bottom: 10px;
+        right: 10px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Header -->
+<header id="header">
+<div class="container nav-container">
+<div class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<svg fill="none" height="32" stroke="#D4AF37" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="32">
+<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+</svg>
+<span class="logo-text">LUX ACCESSORIES</span>
+</div>
+<nav class="nav-links" id="navLinks">
+<a class="active" href="#home">الرئيسية</a>
+<a href="#products" class="">المنتجات</a>
+<a href="#about" class="">من نحن</a>
+<a href="#contact" class="">تواصل معنا</a>
+</nav>
+<div class="nav-actions">
+<button class="cart-btn" id="openCartBtn" title="عرض السلة">
+<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20">
+<circle cx="9" cy="21" r="1"></circle>
+<circle cx="20" cy="21" r="1"></circle>
+<path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+</svg>
+<span class="cart-badge" id="cartBadge">0</span>
+</button>
+<button aria-label="قائمة التصفح" class="mobile-menu-toggle" id="mobileToggle">☰</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div class="hero-content">
+<div class="hero-badge">
+<span class="">✨</span> تشكيلة الخريف الفاخرة 2025
+        </div>
+<h1 class="hero-title">
+          أناقتك تبدأ من <span class="">التفاصيل</span>
+</h1>
+<p class="hero-desc">
+          اكتشف أرقى مجموعات الإكسسوارات المصممة بعناية فائقة لتبرز جاذبيتك وجمالك الفريد في كل مناسبة. قطع مطلية بالذهب والفضة ومطعمة بأجود الأحجار الكريمة.
+        </p>
+<div class="hero-cta">
+<a class="btn btn-gold" href="#products">
+<span class="">تسوق الآن</span>
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18">
+<line x1="19" x2="5" y1="12" y2="12"></line>
+<polyline points="12 19 5 12 12 5"></polyline>
+</svg>
+</a>
+<a class="btn btn-outline" href="#about">تعرّف علينا</a>
+</div>
+</div>
+<div class="hero-img-wrapper">
+<div class="hero-img-card">
+<img alt="إكسسوارات فاخرة - إسوارة التنس الماسية" src="https://lh3.googleusercontent.com/aida/AEtjO1V5szwSrxB0uM1qa4lhINaACAQMrDTMiZdJKascPbhfeOjYuJbmcje8ewZtxFAUv4tdc63kV8-Qjt0aMqevHQYO-v-wG4vhpu1iuTBhFYwGFy0yaa-OP0IW_cRFYJYA5HZAvrBIEKeYeCrZSCK_2hgZ2ptwfjO0o9MhZic5X2RkddfRZugSfbmqI8kb85Aolp_eQTmvW39Vy7zB6liCE0fZUATf2V4nSM18QAY71yaHiZT2B-1hV1G6HyZc">
+</div>
+<div class="floating-box">
+<div class="floating-icon">💎</div>
+<div>
+<div style="font-weight: 700; color: #fff; font-size: 0.95rem;" class="">ضمان الجودة 100%</div>
+<div style="color: var(--text-muted); font-size: 0.8rem;" class="">ذهب أصلي وتصاميم حصرية</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Products Section -->
+<section class="products-section" id="products">
+<div class="container">
+<div class="section-title">
+<span class="">مختاراتنا الحصرية</span>
+<h2 class="">تشكيلة الإكسسوارات</h2>
+</div>
+<!-- Categories Filter -->
+<div class="category-filter">
+<button class="filter-btn active" data-filter="all">الكل</button>
+<button class="filter-btn" data-filter="necklace">سلاسل</button>
+<button class="filter-btn" data-filter="bracelet">أساور</button>
+<button class="filter-btn" data-filter="ring">خواتم</button>
+<button class="filter-btn" data-filter="earring">حلقان</button>
+</div>
+<!-- 8 Products Grid -->
+<div class="products-grid" id="productsContainer">
+        <div class="product-card">
+          <span class="product-badge">الأكثر طلباً</span>
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="سلسال النجمة الذهبية" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-cat">سلاسل</span>
+            <h3 class="product-title">سلسال النجمة الذهبية</h3>
+            <p class="product-desc">سلسال مطلي بذهب عيار 18 مرصع بأحجار الزركون اللامعة لإطلالة ساحرة.</p>
+            <div class="product-footer">
+              <div class="product-price">280 <span class="">ر.س</span></div>
+              <button class="add-to-cart-btn" onclick="addToCart(1)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14M5 12h14"></path>
+                </svg>
+                أضف للسلة
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="product-card">
+          <span class="product-badge">فاخر</span>
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="عقد اللؤلؤ الملكي" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-cat">سلاسل</span>
+            <h3 class="product-title">عقد اللؤلؤ الملكي</h3>
+            <p class="product-desc">حبات لؤلؤ زراعي منتقاة بعناية مع قفل مطلي بالذهب الأصفر النقي.</p>
+            <div class="product-footer">
+              <div class="product-price">450 <span class="">ر.س</span></div>
+              <button class="add-to-cart-btn" onclick="addToCart(2)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14M5 12h14"></path>
+                </svg>
+                أضف للسلة
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="product-card">
+          <span class="product-badge">جديد</span>
+          <div class="product-img-box">
+            <img src="https://lh3.googleusercontent.com/aida/AEtjO1V5szwSrxB0uM1qa4lhINaACAQMrDTMiZdJKascPbhfeOjYuJbmcje8ewZtxFAUv4tdc63kV8-Qjt0aMqevHQYO-v-wG4vhpu1iuTBhFYwGFy0yaa-OP0IW_cRFYJYA5HZAvrBIEKeYeCrZSCK_2hgZ2ptwfjO0o9MhZic5X2RkddfRZugSfbmqI8kb85Aolp_eQTmvW39Vy7zB6liCE0fZUATf2V4nSM18QAY71yaHiZT2B-1hV1G6HyZc" alt="إسوارة التنس الكلاسيكية" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-cat">أساور</span>
+            <h3 class="product-title">إسوارة التنس الكلاسيكية</h3>
+            <p class="product-desc">إسوارة تنس براقة ومرصعة بصفوف دقيقة من الزركون السويسري عالي البريق.</p>
+            <div class="product-footer">
+              <div class="product-price">320 <span class="">ر.س</span></div>
+              <button class="add-to-cart-btn" onclick="addToCart(3)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14M5 12h14"></path>
+                </svg>
+                أضف للسلة
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="product-card">
+          <span class="product-badge">مميز</span>
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="إسوارة الكفة الذهبية المفتوحة" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-cat">أساور</span>
+            <h3 class="product-title">إسوارة الكفة الذهبية المفتوحة</h3>
+            <p class="product-desc">تصميم عصري بسيط يناسب المعصم بكل انسيابية وراحة طوال اليوم.</p>
+            <div class="product-footer">
+              <div class="product-price">240 <span class="">ر.س</span></div>
+              <button class="add-to-cart-btn" onclick="addToCart(4)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14M5 12h14"></path>
+                </svg>
+                أضف للسلة
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="product-card">
+          <span class="product-badge">حصري</span>
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="خاتم السوليتير الملكي" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-cat">خواتم</span>
+            <h3 class="product-title">خاتم السوليتير الملكي</h3>
+            <p class="product-desc">خاتم بلمسة ملكية وحجر مركزي برّاق يعكس الضوء بكل زاوية.</p>
+            <div class="product-footer">
+              <div class="product-price">390 <span class="">ر.س</span></div>
+              <button class="add-to-cart-btn" onclick="addToCart(5)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14M5 12h14"></path>
+                </svg>
+                أضف للسلة
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="product-card">
+          <span class="product-badge">نادر</span>
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="خاتم الزمرد الأخضر" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-cat">خواتم</span>
+            <h3 class="product-title">خاتم الزمرد الأخضر</h3>
+            <p class="product-desc">خاتم مطلي بالذهب ومرصع بحجر أخضر ملكي ذو قطع كلاسيكي استثنائي.</p>
+            <div class="product-footer">
+              <div class="product-price">360 <span class="">ر.س</span></div>
+              <button class="add-to-cart-btn" onclick="addToCart(6)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14M5 12h14"></path>
+                </svg>
+                أضف للسلة
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="product-card">
+          <span class="product-badge">رائج</span>
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="أقراط القطرة المتدلية" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-cat">حلقان</span>
+            <h3 class="product-title">أقراط القطرة المتدلية</h3>
+            <p class="product-desc">حلقان خفيفة الوزن بتصميم قطرة الندى مطلية بالذهب اللامع للمناسبات الخاصة.</p>
+            <div class="product-footer">
+              <div class="product-price">210 <span class="">ر.س</span></div>
+              <button class="add-to-cart-btn" onclick="addToCart(7)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14M5 12h14"></path>
+                </svg>
+                أضف للسلة
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="product-card">
+          <span class="product-badge">يومي</span>
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="حلق الهوب المرصع" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-cat">حلقان</span>
+            <h3 class="product-title">حلق الهوب المرصع</h3>
+            <p class="product-desc">أقراط دائرية عصرية مزينة بقطع كريستالية دقيقة تمنحك إشراقة رقيقة.</p>
+            <div class="product-footer">
+              <div class="product-price">195 <span class="">ر.س</span></div>
+              <button class="add-to-cart-btn" onclick="addToCart(8)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14M5 12h14"></path>
+                </svg>
+                أضف للسلة
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+</section>
+<!-- About Section -->
+<section class="about-section" id="about">
+<div class="container about-grid">
+<div class="about-images">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvnbGMqND_4_xohBsCCwQkz7KfCr3M1SLjV-BsIP_wLLlL4KjssqQnz_t9qMZ_pnaNLFYwDS6Ak9RUCrk0vgY0PoURSgXVpsVEMaFg9-PafptuZUOR8CfpiTtEeKqZoqyZtORvWLayNfwof6qcfzHAw-jkqc9A658EjN1jpwqaXB5hu5UiUCAaqbJY0zr7LGEFX4r8b07Mg715rox3qYCZUbkzg3HdlG0ubp_OplSt" alt="صياغة وحرفية المجوهرات الفاخرة" class="about-img-main">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVqspqAACGK4vjMYlmZDvwZQUpNxosufVcC8qxBHXCDi91joVqJwOjBm00YoQdHoODqn92yKQSZluUHNSOVBOcK8iYDzg5VxoUpvkxDHUSnN46lY5MS6jMRWvk8DUzXk-sgcfIlrRDVaLeN0i8Qzn51ndkUzHni9RPPFrBft6D_Y34H27YbU1zxD70i_zput3YynhvkTHjonVH88A-x50QnkEHazz4ccCcvNvbY5WP" alt="تفاصيل دقيقة لصياغة خواتم الذهب والألماس" class="about-img-sub">
+</div>
+<div class="about-content">
+<div class="section-title" style="text-align: right; margin-bottom: 1.8rem;">
+<span class="">عن متجرنا</span>
+<h2 class="">حرفية راقية &amp; <span class="">شغف بالأناقة</span></h2>
+<style>.about-content .section-title::after { margin: 0.8rem 0 0 auto; }</style>
+</div>
+<p class="">
+          في <strong>LUX Accessories</strong>، نؤمن بأن الإكسسوارات ليست مجرد إضافات، بل هي التعبير الصادق عن الشخصية والأناقة المترفة. بدأنا رحلتنا بشغف لاختيار وصناعة قطع مجوهرات فريدة تجمع بين اللمسة العصرية والتراث الكلاسيكي الخالد.
+        </p>
+<p class="">
+          نستخدم أفضل المعادن المقاومة للصدأ والمطلية بذهب عيار 18 و 24، بالإضافة إلى أحجار الزركون الفاخرة لضمان بقاء بريقك ولمعان إطلالتك في أبهى صورة مدى الحياة.
+        </p>
+<div class="about-features">
+<div class="about-feature-item">
+<div class="feature-icon">✨</div>
+<div class="feature-text">
+<h4 class="">تصاميم حصرية</h4>
+<p class="">موديلات منتقاة ومصنوعة بإتقان تام</p>
+</div>
+</div>
+<div class="about-feature-item">
+<div class="feature-icon">🚚</div>
+<div class="feature-text">
+<h4 class="">شحن سريع وآمن</h4>
+<p class="">توصيل لباب منزلك مع تغليف فاخر</p>
+</div>
+</div>
+<div class="about-feature-item">
+<div class="feature-icon">🛡️</div>
+<div class="feature-text">
+<h4 class="">ضمان الاستبدال</h4>
+<p class="">إمكانية الاسترجاع والاستبدال خلال 14 يوم</p>
+</div>
+</div>
+<div class="about-feature-item">
+<div class="feature-icon">💳</div>
+<div class="feature-text">
+<h4 class="">دفع آمن ومتعدد</h4>
+<p class="">طرق دفع إلكترونية ونقدية عند الاستلام</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+<div class="container">
+<div class="section-title">
+<span class="">&nbsp;ابقَ على تواصل</span>
+<h2 class="">تواصل معنا</h2>
+</div>
+<div class="contact-grid">
+<div class="contact-info-card">
+<div>
+<h3 class="">يسعدنا تواصلك واستفسارك</h3>
+<p class="">فريق خدمة العملاء لدينا مستعد للإجابة على كل استفساراتك حول المقاسات، الطلبات الخاصة، وخدمة ما بعد البيع.</p>
+</div>
+<div class="contact-item">
+<div class="contact-icon">📍</div>
+<div class="contact-detail">
+<h5 class="">موقعنا</h5>
+<p class="">مطار النزهة، شارع 10، بجوار كنيسة مارجرجس والأمير تادرس، الإسكندرية</p>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">📞</div>
+<div class="contact-detail">
+<h5 class="">الهاتف / واتساب</h5>
+<p class="">+966 50 123 4567</p>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">✉️</div>
+<div class="contact-detail">
+<h5 class="">البريد الإلكتروني</h5>
+<p class="">support@luxaccessories.com</p>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">⏰</div>
+<div class="contact-detail">
+<h5 class="">ساعات العمل</h5>
+<p class="">السبت - الخميس: 9:00 ص - 10:00 م</p>
+</div>
+</div>
+</div>
+<div class="contact-form-card">
+<div class="form-alert success" id="formSuccessAlert">
+            تم إرسال رسالتك بنجاح! سيتواصل معك فريقنا خلال 24 ساعة.
+          </div>
+<form id="contactForm">
+<div class="form-group">
+<label for="userName" class="">الاسم الكامل *</label>
+<input class="form-control" id="userName" placeholder="أدخل اسمك الكريم" required="" type="text">
+</div>
+<div class="form-group">
+<label for="userEmail" class="">البريد الإلكتروني *</label>
+<input class="form-control" id="userEmail" placeholder="example@domain.com" required="" type="email">
+</div>
+<div class="form-group">
+<label for="userMessage" class="">الرسالة أو الاستفسار *</label>
+<textarea class="form-control" id="userMessage" placeholder="اكتب استفسارك أو تفاصيل طلبك هنا..." required=""></textarea>
+</div>
+<button class="btn btn-gold" style="width: 100%; justify-content: center;" type="submit">
+<span class="">إرسال الرسالة</span>
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18">
+<line x1="22" x2="11" y1="2" y2="13"></line>
+<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+</svg>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Shopping Cart Drawer Modal -->
+<div class="cart-drawer-overlay" id="cartOverlay"></div>
+<div class="cart-drawer" id="cartDrawer">
+<div class="cart-header">
+<h3 class="">
+<svg fill="none" height="22" stroke="#D4AF37" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="22">
+<circle cx="9" cy="21" r="1"></circle>
+<circle cx="20" cy="21" r="1"></circle>
+<path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+</svg>
+        سلة المشتريات
+      </h3>
+<button class="close-cart" id="closeCartBtn">×</button>
+</div>
+<div class="cart-body" id="cartItemsList">
+          <div class="cart-empty-message">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <p class="">سلتك فارغة حالياً</p>
+            <button class="btn btn-outline" style="margin-top: 1rem; font-size: 0.9rem;" onclick="toggleCart(false)">ابدأ التسوق</button>
+          </div>
+        </div>
+<div class="cart-footer">
+<div class="cart-total-row">
+<span class="">الإجمالي النهائي:</span>
+<span class="cart-total-price" id="cartTotalPrice">0 ر.س</span>
+</div>
+<button class="btn btn-gold" id="checkoutBtn" onclick="checkout()" style="width: 100%;">
+        إتمام الطلب
+      </button>
+</div>
+</div>
+<!-- Toast Element -->
+<div class="toast" id="toast">
+<span class="">✅</span>
+<span id="toastMessage" class="">تمت إضافة المنتج إلى السلة!</span>
+</div>
+<!-- Footer -->
+<footer>
+<div class="container footer-grid">
+<div class="footer-brand">
+<div class="logo">
+<svg fill="none" height="28" stroke="#D4AF37" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="28">
+<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+</svg>
+<span class="logo-text">LUX ACCESSORIES</span>
+</div>
+<p class="">الوجهة الأولى لاقتناء الإكسسوارات الفاخرة والمميزة المصممة لتلائم ذوقك الرفيع بكل عناية ودقة.</p>
+</div>
+<div class="footer-links">
+<h4 class="">روابط سريعة</h4>
+<ul>
+<li class=""><a href="#home" class="">الرئيسية</a></li>
+<li class=""><a href="#products" class="">المنتجات</a></li>
+<li class=""><a href="#about" class="">من نحن</a></li>
+<li class=""><a href="#contact" class="">تواصل معنا</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4 class="">الأقسام</h4>
+<ul>
+<li class=""><a href="#products" class="">سلاسل وعقود</a></li>
+<li class=""><a href="#products" class="">أساور ذهبية</a></li>
+<li class=""><a href="#products" class="">خواتم ألماسية</a></li>
+<li class=""><a href="#products" class="">حلقان وأقراط</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4 class="">خدمة العملاء</h4>
+<ul>
+<li class=""><a href="#" class="">سياسة الخصوصية</a></li>
+<li class=""><a href="#" class="">الشحن والتوصيل</a></li>
+<li class=""><a href="#" class="">سياسة الاسترجاع</a></li>
+<li class=""><a href="#" class="">الأسئلة الشائعة</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p class="">جميع الحقوق محفوظة © 2025 لمتجر LUX Accessories. صُمم بكل فخامة وإتقان.</p>
+</div>
+</footer>
+<!-- JavaScript -->
+<script>
+    // 8 Products Data
+    const products = [
+      {
+        id: 1,
+        name: "سلسال النجمة الذهبية",
+        category: "necklace",
+        categoryName: "سلاسل",
+        price: 280,
+        badge: "الأكثر طلباً",
+        desc: "سلسال مطلي بذهب عيار 18 مرصع بأحجار الزركون اللامعة لإطلالة ساحرة.",
+        image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: 2,
+        name: "عقد اللؤلؤ الملكي",
+        category: "necklace",
+        categoryName: "سلاسل",
+        price: 450,
+        badge: "فاخر",
+        desc: "حبات لؤلؤ زراعي منتقاة بعناية مع قفل مطلي بالذهب الأصفر النقي.",
+        image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: 3,
+        name: "إسوارة التنس الكلاسيكية",
+        category: "bracelet",
+        categoryName: "أساور",
+        price: 320,
+        badge: "جديد",
+        desc: "إسوارة تنس براقة ومرصعة بصفوف دقيقة من الزركون السويسري عالي البريق.",
+        image: "https://lh3.googleusercontent.com/aida/AEtjO1V5szwSrxB0uM1qa4lhINaACAQMrDTMiZdJKascPbhfeOjYuJbmcje8ewZtxFAUv4tdc63kV8-Qjt0aMqevHQYO-v-wG4vhpu1iuTBhFYwGFy0yaa-OP0IW_cRFYJYA5HZAvrBIEKeYeCrZSCK_2hgZ2ptwfjO0o9MhZic5X2RkddfRZugSfbmqI8kb85Aolp_eQTmvW39Vy7zB6liCE0fZUATf2V4nSM18QAY71yaHiZT2B-1hV1G6HyZc"
+      },
+      {
+        id: 4,
+        name: "إسوارة الكفة الذهبية المفتوحة",
+        category: "bracelet",
+        categoryName: "أساور",
+        price: 240,
+        badge: "مميز",
+        desc: "تصميم عصري بسيط يناسب المعصم بكل انسيابية وراحة طوال اليوم.",
+        image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: 5,
+        name: "خاتم السوليتير الملكي",
+        category: "ring",
+        categoryName: "خواتم",
+        price: 390,
+        badge: "حصري",
+        desc: "خاتم بلمسة ملكية وحجر مركزي برّاق يعكس الضوء بكل زاوية.",
+        image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: 6,
+        name: "خاتم الزمرد الأخضر",
+        category: "ring",
+        categoryName: "خواتم",
+        price: 360,
+        badge: "نادر",
+        desc: "خاتم مطلي بالذهب ومرصع بحجر أخضر ملكي ذو قطع كلاسيكي استثنائي.",
+        image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: 7,
+        name: "أقراط القطرة المتدلية",
+        category: "earring",
+        categoryName: "حلقان",
+        price: 210,
+        badge: "رائج",
+        desc: "حلقان خفيفة الوزن بتصميم قطرة الندى مطلية بالذهب اللامع للمناسبات الخاصة.",
+        image: "https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: 8,
+        name: "حلق الهوب المرصع",
+        category: "earring",
+        categoryName: "حلقان",
+        price: 195,
+        badge: "يومي",
+        desc: "أقراط دائرية عصرية مزينة بقطع كريستالية دقيقة تمنحك إشراقة رقيقة.",
+        image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80"
+      }
+    ];
+
+    // Shopping Cart State
+    let cart = [];
+
+    // Render Products
+    function renderProducts(filter = 'all') {
+      const container = document.getElementById('productsContainer');
+      const filtered = filter === 'all' 
+        ? products 
+        : products.filter(p => p.category === filter);
+
+      container.innerHTML = filtered.map(item => `
+        <div class="product-card">
+          <span class="product-badge">${item.badge}</span>
+          <div class="product-img-box">
+            <img src="${item.image}" alt="${item.name}" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-cat">${item.categoryName}</span>
+            <h3 class="product-title">${item.name}</h3>
+            <p class="product-desc">${item.desc}</p>
+            <div class="product-footer">
+              <div class="product-price">${item.price} <span>ر.س</span></div>
+              <button class="add-to-cart-btn" onclick="addToCart(${item.id})">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14M5 12h14"/>
+                </svg>
+                أضف للسلة
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Filter Buttons logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderProducts(btn.getAttribute('data-filter'));
+      });
+    });
+
+    // Cart Drawer Toggle
+    const cartDrawer = document.getElementById('cartDrawer');
+    const cartOverlay = document.getElementById('cartOverlay');
+    const openCartBtn = document.getElementById('openCartBtn');
+    const closeCartBtn = document.getElementById('closeCartBtn');
+
+    function toggleCart(open = true) {
+      if (open) {
+        cartDrawer.classList.add('active');
+        cartOverlay.classList.add('active');
+      } else {
+        cartDrawer.classList.remove('active');
+        cartOverlay.classList.remove('active');
+      }
+    }
+
+    openCartBtn.addEventListener('click', () => toggleCart(true));
+    closeCartBtn.addEventListener('click', () => toggleCart(false));
+    cartOverlay.addEventListener('click', () => toggleCart(false));
+
+    // Toast Function
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMessage');
+      toastMsg.innerText = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
+    }
+
+    // Add to Cart
+    function addToCart(productId) {
+      const product = products.find(p => p.id === productId);
+      const existing = cart.find(item => item.id === productId);
+
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({
+          ...product,
+          quantity: 1
+        });
+      }
+
+      updateCartUI();
+      showToast(`تمت إضافة "${product.name}" إلى السلة`);
+    }
+
+    // Remove from Cart
+    function removeFromCart(productId) {
+      cart = cart.filter(item => item.id !== productId);
+      updateCartUI();
+    }
+
+    // Update Quantity
+    function updateQty(productId, delta) {
+      const item = cart.find(p => p.id === productId);
+      if (!item) return;
+
+      item.quantity += delta;
+      if (item.quantity <= 0) {
+        removeFromCart(productId);
+      } else {
+        updateCartUI();
+      }
+    }
+
+    // Update Cart UI
+    function updateCartUI() {
+      const cartBadge = document.getElementById('cartBadge');
+      const cartItemsList = document.getElementById('cartItemsList');
+      const cartTotalPrice = document.getElementById('cartTotalPrice');
+
+      const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+      const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
+      cartBadge.innerText = totalItems;
+      cartTotalPrice.innerText = `${totalPrice} ر.س`;
+
+      if (cart.length === 0) {
+        cartItemsList.innerHTML = `
+          <div class="cart-empty-message">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <p>سلتك فارغة حالياً</p>
+            <button class="btn btn-outline" style="margin-top: 1rem; font-size: 0.9rem;" onclick="toggleCart(false)">ابدأ التسوق</button>
+          </div>
+        `;
+        return;
+      }
+
+      cartItemsList.innerHTML = cart.map(item => `
+        <div class="cart-item">
+          <img src="${item.image}" alt="${item.name}" class="cart-item-img">
+          <div class="cart-item-details">
+            <h4 class="cart-item-title">${item.name}</h4>
+            <div class="cart-item-price">${item.price * item.quantity} ر.س</div>
+            <div class="cart-item-qty">
+              <span>الكمية:</span>
+              <button class="qty-btn" onclick="updateQty(${item.id}, -1)">-</button>
+              <span>${item.quantity}</span>
+              <button class="qty-btn" onclick="updateQty(${item.id}, 1)">+</button>
+            </div>
+          </div>
+          <button class="cart-item-remove" onclick="removeFromCart(${item.id})" title="حذف">&times;</button>
+        </div>
+      `).join('');
+    }
+
+    // Checkout button handler
+    function checkout() {
+      if (cart.length === 0) {
+        alert("سلة التسوق فارغة، يرجى اختيار منتجات أولاً.");
+        return;
+      }
+      const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+      alert(`شكراً لطلبك من LUX Accessories!\nإجمالي الطلب: ${total} ر.س\nسيتم نقلك لصفحة الدفع.`);
+      cart = [];
+      updateCartUI();
+      toggleCart(false);
+    }
+
+    // Contact Form Submit Handler
+    const contactForm = document.getElementById('contactForm');
+    const formAlert = document.getElementById('formSuccessAlert');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      formAlert.style.display = 'block';
+      contactForm.reset();
+      setTimeout(() => {
+        formAlert.style.display = 'none';
+      }, 5000);
+    });
+
+    // Mobile Navbar Menu Toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close mobile nav when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+
+    // Initial render
+    renderProducts();
+    updateCartUI();
+  </script>
+
+
+</body></html>
